@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Spotify</string>
+    <string name="todos"></string>
+    <string name="user">Ingrese su E-mail</string>
+    <string name="pass">Ingrese su contraseña</string>
+    <string name="btnIn">Iniciar sesion</string>
+    <string name="eagle">Agencia eagle Software</string>
+    <string name="politicas">Terminos y condiciones</string>
+</resources>

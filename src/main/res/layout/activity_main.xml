@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_dark_background"
+    android:backgroundTint="#131313"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtLinkPoliticas"
+        android:layout_width="181dp"
+        android:layout_height="32dp"
+        android:layout_marginBottom="36dp"
+        android:text="@string/politicas"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.569"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="387dp"
+        android:layout_height="195dp"
+        android:layout_marginTop="84dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/img" />
+
+    <LinearLayout
+        android:id="@+id/cont"
+        android:layout_width="303dp"
+        android:layout_height="265dp"
+        android:orientation="vertical"
+        android:paddingTop="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.587"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.68"
+        tools:ignore="MissingConstraints">
+
+        <EditText
+            android:id="@+id/txtUser"
+            android:layout_width="267dp"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:drawableEnd="@android:drawable/sym_action_email"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/user"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textColorHint="#757575" />
+
+        <EditText
+            android:id="@+id/txtPass"
+            android:layout_width="266dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/pass"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textColorHint="#757575" />
+
+
+        <Button
+            android:id="@+id/btnIngresar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="#FC5500"
+            android:drawableEnd="@android:drawable/ic_menu_send"
+            android:drawableTint="#131313"
+            android:gravity="center"
+            android:text="@string/btnIn"
+            app:iconTint="@color/black"
+            app:strokeColor="#F44336"
+            tools:ignore="VisualLintButtonSize" />
+
+        <TextView
+            android:id="@+id/txtResetPassword"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:onClick="olvideContrasena"
+            android:text="Olvidé Contraseña"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtPass" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/BomMusic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autoText="false"
+        android:backgroundTint="#F9F5F5"
+        android:text="BomMusic"
+        android:textColor="#FFFFFF"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.381" />
+
+    <Button
+        android:id="@+id/btnRegistro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FC5500"
+        android:text="Registro"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.871" /> <!-- Cambiar a un tono de naranja -->
+    android:text="Registro"
+    android:textSize="16sp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.562"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.869" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
