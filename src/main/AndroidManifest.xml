@@ -15,7 +15,7 @@
         android:theme="@style/Theme.Spotify"
         tools:targetApi="31" >
         <activity
-            android:name=".Registro"
+            android:name=".RegistroActivity"
             android:exported="false" />
         <activity
             android:name=".nuevolayaut"

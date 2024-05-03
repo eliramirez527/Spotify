@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 
+    android:backgroundTint="#302A27"
     android:textAlignment="center"
     tools:context=".RegistroActivity">
 
@@ -15,22 +16,24 @@
         android:layout_height="match_parent"
         android:layout_margin="0dp"
         android:background="#FFFFFF"
-        android:textAlignment="center"
+        android:backgroundTint="#131313"
 
+        android:textAlignment="center"
         app:cardElevation="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.498"
+        app:layout_constraintVertical_bias="1.0"
         tools:ignore="VisualLintBounds">
 
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="376dp"
             android:layout_height="match_parent"
             android:layout_marginStart="20dp"
             android:layout_marginEnd="32dp"
+            android:backgroundTint="#131313"
             android:orientation="vertical"
             android:paddingTop="30dp"
             android:translationZ="1dp"
@@ -132,15 +135,21 @@
 
                 <RadioButton
                     android:id="@+id/rbEstudiante"
-                    android:layout_width="wrap_content"
+                    android:layout_width="189dp"
                     android:layout_height="wrap_content"
-                    android:text="Estudiante" />
+                    android:text="Estudiante"
+                    android:textColor="#FBFAFA"
+                    android:textColorHint="#F9F7F7" />
 
                 <RadioButton
                     android:id="@+id/rbAdministrador"
-                    android:layout_width="wrap_content"
+                    android:layout_width="187dp"
                     android:layout_height="wrap_content"
-                    android:text="Administrador" />
+                    android:backgroundTint="#E91E63"
+                    android:text="Administrador"
+                    android:textColor="#F9F7F7"
+                    android:textColorHint="#FBF9F9"
+                    android:textColorLink="#EFE9E9" />
             </RadioGroup>
 
 
@@ -148,9 +157,10 @@
                 android:id="@+id/btnRegistro"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:backgroundTint="@color/design_default_color_on_primary"
+                android:backgroundTint="#F15500"
                 android:text="Registrarse"
-                android:textColor="@color/cardview_shadow_start_color" />
+                android:textColor="#100E0E"
+                app:iconTint="#0B0B0B" />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 
