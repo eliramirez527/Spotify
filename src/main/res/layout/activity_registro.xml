@@ -95,6 +95,7 @@
                 android:layout_height="wrap_content"
                 android:autofillHints=""
                 android:ems="10"
+                android:gravity="center"
                 android:hint="Edad"
                 android:inputType="number"
                 android:minHeight="48dp"
@@ -109,6 +110,7 @@
                 android:drawableEnd="@android:drawable/sym_action_email"
 
                 android:ems="10"
+                android:gravity="center"
                 android:hint="Email"
                 android:inputType="textEmailAddress"
                 android:minHeight="48dp"
